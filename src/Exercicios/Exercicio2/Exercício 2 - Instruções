@@ -1,0 +1,14 @@
+- Campeonato de Carros:
+
+Programa deve criar 10 threads (sendo 10 o número de competidores numerados de 1 a 10);
+- Haverão M corridas(M>10);
+- Apos cada corrida deve-se esperar o termino de todos os competidores;
+- A competição se daria pela concorrencia entre as threads por acesso a regiao crítica. Assim que a thread conseguisse acessar a regiao critica receberia o ponto  correspondente a sua posição.
+- Pontuação seria:
+ 1º = 10,
+ 2º = 9 ,
+ 3º = 8 ,
+ ...
+- ao temino do campeonato haveria 1 competidor campeão;
+- Campeão o competidor que juntou o maior numero de pontos.
+Obs.: no caso de empates o campeao seria decidido por ordem numérica (crescente)

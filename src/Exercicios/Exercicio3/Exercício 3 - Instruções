@@ -1,0 +1,28 @@
+Crie um programa que simule o funcionamento do processo de construção de carros.
+
+O processo é dividido em três partes: a construção das peças, a montagem do carro, e o teste dos carros.
+
+Os robôs construtores enviam as peças prontas para a área de montagem em uma esteira que suportam 30 conjuntos de peças no total.
+
+A montadora recebe as peças, os robôs montadores montam o carro (lembrem-se que um carro não pode ser montado se não houver peças na esteira)
+e o enviam pronto para o centro de teste, que libera o carro após ser testado. A garagem do centro de testes suporta
+apenas 20 carros e existem vários pilotos de teste.
+
+Todos os robôs construtores constroem a mesma quantidade de conjuntos de peças, a menos que a quantidade de conjuntos a
+serem construídos dividida pela quantidade de robôs construtores dê resto diferente de zero. Nesse caso o primeiro robô
+vai construir (qtd_de_conjuntos/qtd_de_construtores + qtd_de_conjuntos%qtd_de_construtores) e
+todos os outros vão construir apenas (qtd_de_conjuntos/qtd_de_construtores). O mesmo acontece com os robôs montadores e os
+pilotos de teste.
+
+Lembre-se que os robôs montadores, os robôs construtores e os pilotos são independentes entre si, mas apenas
+um robô pode acessar a esteira num determinado momento assim como apenas um robô montador ou um piloto pode acessar a garagem num
+determinado momento.
+
+As entradas do programa serão a quantidade de conjuntos de peças que devem ser produzidos, a quantidade de robôs construtores, a
+quantidade de robôs montadores e a quantidade de pilotos de teste.
+
+O seu programa deve imprimir na tela toda vez que um robô construtor, robô montador ou piloto de testes tentar exercer sua função.
+
+Deve imprimir tambêm a quantidade de conjunto de peças/carros que estão na esteira e na garagem toda vez que essas quantidades são alteradas.
+
+E também deve imprimir quando um construtor, montador ou piloto terminar o trabalho.
