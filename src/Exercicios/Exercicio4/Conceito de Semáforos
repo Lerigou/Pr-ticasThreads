@@ -1,0 +1,20 @@
+Semáforos são estruturas de dados utilizadas para controlar o acesso a recursos compartilhados em ambientes concorrentes.
+Funcionam como contadores inteligentes que mantêm uma contagem atual maior ou igual a zero,
+permitindo ou bloqueando o acesso de threads aos recursos.
+
+Em Java, semáforos são empregados para coordenar o acesso a seções críticas do código, garantindo que apenas
+uma thread execute essas partes por vez. Operam com duas principais primitivas: wait (bloqueia até o semáforo estar disponível,
+quando o contador é maior que zero) e signal (incrementa o contador, liberando uma thread em espera se houver).
+
+Internamente, semáforos utilizam uma fila de espera associada a cada processo (FIFO). Quando uma thread chama wait e o
+semáforo está fechado (contador igual a zero), ela entra na fila de espera até que o semáforo seja aberto (signal).
+Isso garante que as operações de incrementar e decrementar o contador sejam atômicas, evitando condições de corrida entre threads.
+
+Existem dois tipos principais de semáforos:
+
+Semáforo Mutex: Permite acesso exclusivo a um recurso, geralmente inicializado com valor 1.
+Semáforo Contador: Permite acesso concorrente por múltiplas threads, limitado pelo valor inicial do semáforo.
+
+Semáforos são uma ferramenta essencial para garantir a consistência e a sincronização entre threads em programas multitarefa,
+evitando condições de disputa e garantindo o acesso seguro a recursos compartilhados.
+
